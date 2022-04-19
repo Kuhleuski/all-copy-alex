@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Entity
 @Table
-@DiscriminatorValue("H")
+@PrimaryKeyJoinColumn(name = "taskId")
 public class HomeTask extends Task {
 
 

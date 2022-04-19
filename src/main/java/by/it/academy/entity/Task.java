@@ -14,12 +14,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "TASK_TYPE",discriminatorType = DiscriminatorType.CHAR)
-@DiscriminatorValue("T")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+//
 public class Task {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column
     private String name;

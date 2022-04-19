@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Entity
 @Table
-@DiscriminatorValue("H")
+//
 public class HomeTask extends Task {
 
 

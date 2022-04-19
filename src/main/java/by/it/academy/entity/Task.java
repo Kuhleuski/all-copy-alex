@@ -15,7 +15,7 @@ import javax.persistence.*;
 @Entity
 @Table
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-
+//
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

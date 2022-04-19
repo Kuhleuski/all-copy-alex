@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Entity
 @Table
-
+//
 public class WorkTask extends Task {
     @Column
     private Double cost;
